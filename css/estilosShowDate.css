@@ -1,0 +1,70 @@
+.animated-border {
+  position: relative;
+  border-radius: 8px;
+  animation: borderAnimation 8s infinite;
+  overflow: hidden;
+}
+@keyframes borderAnimation {
+  0% {
+    border: 4px solid #ff2770;
+  }
+  25% {
+    border: 4px solid #45f3ff;
+  }
+  50% {
+    border: 4px solid #ff2770;
+  }
+  75% {
+    border: 4px solid #45f3ff;
+  }
+  100% {
+    border: 4px solid #ff2770;
+  }
+}
+/* Existing styles */
+/* ... */
+.showDate-style {
+  position: relative;
+  border-radius: 8px;
+  animation: borderAnimation 8s infinite;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center; /* Center text */
+}
+.center-container {
+  text-align: center;
+}
+.center-container img {
+  display: block;
+  margin: auto;
+  width: 400px; /* Puedes ajustar el ancho según tus necesidades */
+}
+/* Make the animation responsive */
+@keyframes borderAnimation {
+  0% {
+    border: 4px solid #ff2770;
+  }
+  25% {
+    border: 4px solid #45f3ff;
+  }
+  50% {
+    border: 4px solid #ff2770;
+  }
+  75% {
+    border: 4px solid #45f3ff;
+  }
+  100% {
+    border: 4px solid #ff2770;
+  }
+}
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .showDate-style {
+    max-width: 90%; /* Adjust as needed for responsiveness */
+    margin: 0 auto; /* Center the element on smaller screens */
+  }
+}
+
+

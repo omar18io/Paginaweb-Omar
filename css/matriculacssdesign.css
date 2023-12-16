@@ -1,0 +1,198 @@
+/* body {
+    font-family: 'Poppins', sans-serif;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+:root {
+    --padding-container: 100px 0;
+    --color-title: #001A49;
+}
+body {
+    margin: 0;
+    padding: 0;
+    /* font-family: Arial, sans-serif; */
+    /* background: #D14545; Color de fondo */
+    transition: background 0.5s; /* Transición para cambios de color de fondo */
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+.about {
+    text-align: center; 
+}
+.subtitle {
+    /* color: red; */
+    color: var(--color-title);
+    font-size: 3rem;
+    margin-bottom: 25px;
+}
+.about__paragraph {
+    line-height: 1.7;
+}
+.about__main {
+    padding-top: 80px;
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+}
+.about__icons {
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    width: 260px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.knowledge {
+    background-color: #e5e5f7;
+    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    overflow: hidden;
+}
+.knowledge__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+}
+.knowledge__picture{
+    max-width: 500px;
+}
+.knowledge__paragraph{
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+.knowledge__img{
+    width: 100%;
+    display: block;
+}
+.cta {
+    display: inline-block;
+    background-color: #2091F9;
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 32px;
+}
+@media (max-width:800px){
+    .knowledge__container{
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+        gap: 3em;
+        text-align: center;
+    }
+    .knowledge__picture{
+        grid-row: 1/2;
+        justify-self: center;
+    }
+    .questions__copy{
+        width: 100%;
+    }
+}
+.container.about {
+    padding: 20px;
+    text-align: center;
+}
+/* Estilos para los artículos */
+.about__icons {
+    margin: 20px;
+    display: inline-block;
+    vertical-align: top;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out; /* Transición para efecto de escala */
+}
+.about__icons:hover {
+    transform: scale(1.1); /* Efecto de escala al pasar el mouse por encima */
+}
+.frecuentesTest {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.parrafo-text {
+    line-height: 1.6;
+    color: #333;
+}
+@media only screen and (max-width: 600px) {
+    .frecuentesTest {
+        max-width: 100%;
+    }
+    .questions__title{
+        font-size: 1rem;
+    }
+}
+/* Questions */
+.questions{
+    text-align: center;
+}
+.questions__container{
+    display: grid;
+    gap: 2em;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.questions__padding{
+    padding: 0;
+    transition: padding .3s;
+    border: 1px solid #5454D4;
+    border-radius: 6px;
+}
+.questions__padding--add{
+    padding-bottom: 30px;
+}
+.questions__answer{
+    padding: 0 30px 0;
+    overflow: hidden;
+}
+.questions__title{
+    text-align: left;
+    display: flex;
+    font-size: 20px;
+    padding: 30px 0 30px;
+    cursor: pointer;
+    color: var(--color-title);
+    justify-content: space-between;
+}
+.questions__arrow{
+    border-radius: 50%;
+    background-color: var(--color-title);
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    margin-left: 10px;
+    transition:  transform .3s;
+}
+.questions__arrow--rotate{
+    transform: rotate(180deg);
+}
+.questions__show{
+    text-align: left;
+    height: 0;
+    transition: height .3s;
+}
+.questions__img{
+    display: block;
+}
+.questions__copy{
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}

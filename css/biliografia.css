@@ -1,0 +1,53 @@
+/* Estilos para la sección de Bibliografía */
+.onar-titulo-section {
+    text-align: center;
+    background-color: #f2f2f2; /* Fondo gris claro */
+    padding: 20px;
+}
+.titylo-biliografico {
+    margin: 0;
+    font-size: 2em;
+    color: #333; /* Color del texto principal */
+}
+/* Estilos para la sección de Bibliografía */
+.bibliografia-section {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #f2f2f2; /* Fondo gris claro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.ul-section {
+    list-style-type: none;
+    padding: 0;
+}
+.a-li-bilografia {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+.a-section-bilografia {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s; /* Efecto de transición en el color al pasar el ratón */
+}
+.a-section-bilografia:hover {
+    color: #007bff; /* Cambia el color al pasar el ratón */
+    text-decoration: underline;
+}
+.a-strong-bilografia,
+.a-em-bilografia,
+.a-span-bilografia {
+    display: block;
+    margin-top: 5px;
+    color: #666;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 600px) {
+    .bibliografia-section {
+        padding: 15px;
+    }
+}

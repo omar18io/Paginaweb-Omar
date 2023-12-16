@@ -1,0 +1,58 @@
+.carousel-container {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+    /* Asegúrate de que el contenido que se desborda del contenedor sea ocultado */
+}
+
+.carousel {
+    display: flex;
+    width: 300%;
+    transition: transform 0.5s ease;
+    /* El 300% es para contener todas las imágenes (100% para cada una) */
+}
+
+.slide {
+    flex: 0 0 33.333%;
+    /* Cada slide ocupa 33.333% del contenedor para contener tres imágenes al mismo tiempo */
+    transition: transform 0.5s ease;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    /* Asegúrate de que la imagen ocupe todo el ancho del contenedor */
+    height: auto;
+}
+
+.text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}

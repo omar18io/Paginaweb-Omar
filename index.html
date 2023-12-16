@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- languaje = es de españolm en es de ingles -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Centro De Varones N°20874</title>
+    <script src="https://kit.fontawesome.com/283335a286.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/stilosFormularios.css">
+    <link rel="stylesheet" href="/css/estilos.css"> 
+    <link rel="icon" type="image.jpg" href="/img/va.jpg">
+    <meta property="twitter:description" content="centro de varones"> <!--Hola, soy una descripción que verás cuando busques algo de mi temática en Google.-->
+    <meta name="description" content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google.">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"> <!---->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!--google fonts--> 
+    <!-- user edient = para poner sus propios estilos -->
+    <!-- primero teniamos que crear snepers  : ctrl + shift + p : user Snippets : css.json -->
+    <link rel="stylesheet" href="/estilosShowDate.css">
+    <link rel="stylesheet" href="/btnAnimado.css">
+    <link rel="stylesheet" href="/estilosUbicacion.css">
+</head>
+<body>
+    <header class="encabezado">
+        <div class="contenedor-navegacion">
+            <div class="contenido-navegacion contenedor"><!--y en el navegador padre del logo de mi navegacion le agregamos la clase de contenedor y nos lo centra --> 
+                <div class="logo">
+                    <h2>Centro De Varones N°<span class="verde">20</span><span>8</span><span class="rojo">74</span></h2>
+                </div>
+                <nav class="navegacion ocultar"> <!--barra de navegacion--> <!--ocultar esuna subclase q hara desaparecer los enlaces -->
+                    <a href="/">Inicio</a>
+                    <a href="/Ideario.html">Ideario</a>
+                    <a href="/Historia.html">Historia</a>
+                    <a href="/Organigrama.html">Organigrama</a>
+                    <a href="/FotosIEP.html">Fotpos de IEP</a>
+                    <a href="/PAT.html">pat de Centro Varones</a>
+                    <a href="/Pei.html">pei de Centro de Varones</a>
+                    <a href="/reglamentoInterno.html">Reglamento Interno</a>
+                    <a href="/listaDocentes.html">Todos los Docentes de La IEP Centro de Varones</a>
+                    <a href="/biliografia.html">Biliografia</a>
+                </nav>
+                <div class="hamburguesa">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+        <div class="contenido-header">
+            <div class="contenedor-encabezado">
+                <div class="texto-encabezado">
+                    <h2>Centro De Varones N° 20874</h2>
+                    <!-- <a href="/listaDocentes.html" class="btn bordes">Nosotros</a> -->
+                    <a href="/contacto.html" class="btn bordes">Contactanos</a>
+                </div>
+                <video autoplay loop muted>
+                    <source src="/assets/hack1web.mp4">
+                </video>
+            </div>
+        </div>
+    </header>
+    <div class="mostrarNombreUsuario"> <!--mostrar la laerta Y El texto zz-->
+        <!-- <p class="nombresMostrar"></p>  -->
+    </div>
+    <!-- <iframe src="https://gamma.app/embed/ftwe2bcaa3i6qvw" style="width: 700px; max-width: 100%; height: 450px" allow="fullscreen" title="Introducción a la Inteligencia Artificial (IA)"></iframe> -->
+    <!-- <br> -->
+    <div id="showDate" class="showDate-stile">
+        
+    </div><br><br>
+    <div class="chat-bot-title">
+        <div class="descripcion-chat">
+            <h3 class="titulo-chat-lista">Mayor Informacion U Cualquier Otra consulta con nuestro chat Para ello tendras una lista de que <br>
+            Es lo que solo se puede preguntar ya que de otra forma no tendra informacion para  ello grcias.</h3>
+        </div>
+    </div>
+    <div class="chat-content-res">
+        <div class="contenido-chat">
+            <h2 class="title-context-chat">En esta Parte Lo que tu veras Sera Como Poder Hablar Con Nuestro Chat Bot :</h2>
+            <h3 class="title-h3-context">Con siguientes palabras claves que te pasaremos <br>
+            Para que busques y te responda y si quieres saber aun mas puedes seguir viendo las <br>
+        demas secciones de nuestra web o si alguna duda atravez de nuestro Formulario nos podras enviarnos tu mensaje .😎</h3>
+            <div class="contenido-chat-conver" id="contenido-chat-conver">
+                <p class="parrafo-chat-bot-res">hola</p>
+                <p class="parrafo-chat-bot-res">presentacion</p>
+                <p class="parrafo-chat-bot-res">sitio_web</p>
+                <p class="parrafo-chat-bot-res">colegio_programacion</p>
+                <p class="parrafo-chat-bot-res">herramientas_web</p>
+                <p class="parrafo-chat-bot-res">programacion</p>
+                <p class="parrafo-chat-bot-res">politica</p>
+                <p class="parrafo-chat-bot-res">deportes</p>
+                <p class="parrafo-chat-bot-res">pat_colegios</p>
+                <p class="parrafo-chat-bot-res">pei_colegios</p>
+                <p class="parrafo-chat-bot-res">docentes</p>
+            </div>
+        </div>
+    </div>
+    <div id="chat-container">
+        <div id="chat-messages"></div>
+        <div id="user-input">
+          <input type="text" id="message-input" placeholder="Escribe un mensaje...">
+          <button onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+    <div class="contenedor-nosotros contenedor">
+        <div class="texto-nosotros">
+            <p class="bienvenida">Mision Y Vison de Nuestra IEP</p>
+            <h1>Seguro ya han Escuchado Sobre Nosotros como Un Colegio Bien Reconocido</h1>
+            <p>Y claro para todo hay un porque esto se debe <br>
+            que hemos sido reconocidos y siempre viendo a nuestros <br>
+            competidores como lo es JBS xd Y a otros mas info ....</p>
+            <p><b>MISION</b><br>
+                Nuestra Mision Es Brindar a nuestros estudiantes <br>
+                oportunidades a sus habilidades siendo destacados en <br>
+                alguna especialidad que se quiera desarrollar y lo que buscamos es <br>
+                Tener Buenos Profesionales en sus Areas Ya que cada Uno Puede <br>
+                Contribuir con su granito de grano xd .. info OR.
+            </p>
+            <p><b>VISION</b><br>
+                Nuestra Mision Es Brindar a nuestros estudiantes <br>
+                oportunidades a sus habilidades siendo destacados en <br>
+                alguna especialidad que se quiera desarrollar y lo que buscamos es <br>
+                Tener Buenos Profesionales en sus Areas Ya que cada Uno Puede <br>
+                Contribuir con su granito de grano xd .. info OR.
+            </p>
+            <a href="/contacto.html" class="btn btn-rojo">Contactar</a>
+        </div>
+        <div class="imagenes-nosotros">
+            <div class="imagen1">
+                <img data-src="assets/imagenes/directorcv.jpg" alt="director cv colegio">
+            </div>
+            <div class="imagenes2">
+                <img data-src="assets/imagenes/bandacv.png" alt="banda cv colegio"> <!--basicamente los data son atributos para agregar informacion extra eso es muy comun para ejemplo saber que imagenes estas clicando le tienes q agregar un data-id y el id q estas clicando . o alque sea diferente a ese id q te lo muestre y q elimine al q clikastes osea que tiene q devolver los q sean diferente al q clikastes basicamente eso es con un .filter : los data son para oder almacenar inforrmacion extra en este caso estamos almacenando la url o la ubicacion donde estan nuestros archivos mas bien nuestras immagenes : q cuando cargen haya una interseccion osea cuando se muetre que carguedichas imagenes : -->
+                <img data-src="assets/imagenes/Ubicacioncv.png" alt="ubicacion cv colegio"> <!--las imagenes la vamos a generar con javascript ya q vamos hacer como un mini mexi load q basicamente es q cuando valla mostrarse el contenido las imagenes van a ir cargando -->
+            </div>
+        </div>
+    </div>
+
+    <section class="menu contenedor">
+        <h2 class="texto-platillos">Mas Sobre Nuestra IESTP</h2>
+        <div class="botones-platillos">
+            <button class="todos btn btn-verde">Todos</button>
+            <button class="ensaladas btn btn-verde">Ambiente</button>
+            <button class="pasta btn btn-verde">Banda</button>
+            <button class="pizza btn btn-verde">Exelencia IESTP</button>
+            <button class="postres btn btn-verde">profesores</button>
+        </div>
+        <div class="platillos">
+            <div class="platillo" data-platillo="ensalada">
+                <img data-src="assets/imagenes/Ubicacioncv.png" alt="ensalada">
+                <h2>Ambiente</h2>
+                <p>Estamos Ubicados En San Vicente ruc:657.55757.32 xd</p>
+                <div class="precio">
+                    <p>Queres Saber mas Lorem, ipsum dolor sit amet consectetur <br>
+                        adipisicing elit. Deleniti nemo minus pariatur dolor quisquam <br>
+                        explicabo accusamus et aliquam. Soluta, incidunt.</p>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="ensalada">
+                <img data-src="assets/imagenes/Ubicacioncv.png" alt="ensalada">
+                <h2>Ambiente 2 :vvv</h2>
+                <p>Estamos Ubicados En San Vicente ruc:657.55757.32 xd zzz</p>
+                <div class="precio">
+                    <p>Queres Saber mas Lorem, ipsum dolor sit amet consectetur <br>
+                        adipisicing elit. Deleniti nemo minus pariatur dolor quisquam <br>
+                        explicabo accusamus et aliquam. Soluta, incidunt.</p>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="ensalada">
+                <img data-src="assets/imagenes/Ubicacioncv.png" alt="ensalada">
+                <h2>Ambiente tree zzz tutututntit</h2>
+                <p>Estamos Ubicados En San Vicente ruc:657.55757.32 xd</p>
+                <div class="precio">
+                    <p>Queres Saber mas Lorem, ipsum dolor sit amet consectetur <br>
+                        adipisicing elit. Deleniti nemo minus pariatur dolor quisquam <br>
+                        explicabo accusamus et aliquam. Soluta, incidunt.</p>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pasta">
+                <img data-src="assets/imagenes/bandacv.png" alt="pasta">
+                <h2>Banda zzz</h2>
+                <p>EL equipo de banda xd ver mas .</p>
+                <div class="precio">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
+                         Sapiente voluptates optio iste hic beatae ratione <br>
+                         praesentium architecto error mollitia incidunt, laborum <br>
+                          odio? Suscipit eveniet placeat vel aliquam qui animi assumenda.</p>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pasta">
+                <img data-src="assets/imagenes/bandacv.png" alt="pasta">
+                <h2>Banda xxxesesesomar.wwwert</h2>
+                <p>Descripcion  un poco o algo xx</p>
+                <div class="precio">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>
+                        elit. Eligendi adipisci eum aspernatur officiis? <br>
+                         Pariatur, expedita saepe fugiat voluptates ipsum <br>
+                         aspernatur, esse nulla ab blanditiis impedit omnis. <br>
+                         Repellat quo quos sint.</p>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pasta">
+                <img data-src="assets/imagenes/bandacv.png" alt="pasta">
+                <h2>Banda me encop xd zzzzzz</h2>
+                <p> info info gbv cr7 ksksks lololo x.</p>
+                <div class="precio">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+                    dolor ducimus blanditiis nesciunt. Accusamus aliquam  <br>
+                    numquam provident officiis sapiente laudantium molestias, et, <br>
+                    voluptatem labore fugit doloribus nesciunt voluptates mollitia impedit?</p>
+                    <!-- <button><i class="fas fa-shopping-basket"></i></button> -->
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pizza">
+                <img data-src="assets/imagenes/exelenciacv.png" alt="pizza">
+                <h2>Excelencia Joven Talentosos</h2>
+                <p>Estudiantes Talentosos cada uno en su rama de desarrollo :</p>
+                <div class="precio">
+                    <p>Cuendo Diga a su rama es a su especialidad y no el todo como Multitester xd <br>
+                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem,<br>
+                         repellendus? Sequi, inventore alias?</p>
+                    <!-- <button><i class="fas fa-shopping-basket"></i></button> -->
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pizza">
+                <img data-src="assets/imagenes/exelenciacv.png" alt="pizza">
+                <h2>Excelencia Joven Talentosos estudiantes</h2>
+                <p>Estudiantes Talentosos cada uno en su rama de desarrollo :</p>
+                <div class="precio">
+                    <p>Cuendo Diga a su rama es a su especialidad y no el todo como Multitester xd <br>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem,<br>
+                        repellendus? Sequi, inventore alias?</p>
+                    <!-- <button><i class="fas fa-shopping-basket"></i></button> -->
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pizza">
+                <img data-src="assets/imagenes/exelenciacv.png" alt="pizza">
+                <h2>Excelencia Jovenes Talentosos futuro</h2>
+                <p>Estudiantes Talentosos cada uno en su rama de desarrollo :</p>
+                <div class="precio">
+                    <p>Cuendo Diga a su rama es a su especialidad y no el todo como Multitester xd <br>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem,<br>
+                        repellendus? Sequi, inventore alias?</p>
+                    <!-- <button><i class="fas fa-shopping-basket"></i></button> -->
+                </div>
+            </div>
+            <div class="platillo" data-platillo="postre">
+                <img data-src="assets/imagenes/profesorescv.png" alt="postre">
+                <h2>Profesores de la IEP</h2>
+                <p>Estas Imagenes Son tomadas del plantel del colegio .?</p>
+                <div class="precio">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab <br>
+                    voluptates fugit laudantium quis minus excepturi natus ex, voluptatem <br>
+                    dolorum hic unde iste quos. Reprehenderit sequi veritatis quia officiis <br>
+                    voluptatum! Sunt magnam voluptate perspiciatis. Quas, voluptatum ex! <br>
+                    Dolorum corporis dolorem nisi?</p>
+                    <!-- <button><i class="fas fa-shopping-basket"></i></button> -->
+                </div>
+            </div>
+            <div class="platillo" data-platillo="postre">
+                <img data-src="assets/imagenes/profesorescv.png" alt="postre">
+                <h2>Profesores de la IEP</h2>
+                <p>Estas Imagenes Son tomadas del plantel del colegio .?</p>
+                <div class="precio">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab <br>
+                        voluptates fugit laudantium quis minus excepturi natus ex, voluptatem <br>
+                        dolorum hic unde iste quos. Reprehenderit sequi veritatis quia officiis <br>
+                        voluptatum! Sunt magnam voluptate perspiciatis. Quas, voluptatum ex! <br>
+                        Dolorum corporis dolorem nisi?</p>
+                    <!-- <button><i class="fas fa-shopping-basket"></i></button> -->
+                </div>
+            </div>
+            <div class="platillo" data-platillo="postre">
+                <img data-src="assets/imagenes/profesorescv.png" alt="postre">
+                <h2>Profesores de la IEP</h2>
+                <p>Estas Imagenes Son tomadas del plantel del colegio .?</p>
+                <div class="precio">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab <br>
+                        voluptates fugit laudantium quis minus excepturi natus ex, voluptatem <br>
+                        dolorum hic unde iste quos. Reprehenderit sequi veritatis quia officiis <br>
+                        voluptatum! Sunt magnam voluptate perspiciatis. Quas, voluptatum ex! <br>
+                        Dolorum corporis dolorem nisi?</p>
+                    <!-- <button><i class="fas fa-shopping-basket"></i></button> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="separador">
+        <div class="contenido-separador contenedor">
+            <h2>Quieres Saber Como Es El Proceso De Matricula</h2>
+            <p>Te Guiaremos Paso a Paso Y si lo puedes Hacer Atravez de esta pagina web <br>
+            1.- Da Click A -- Matricula --</p>
+            <a href="/Matricula.html" class="btn btn-verde">Matricula</a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div>
+        <p class="ubicacion-centro">Donde Estamos Ubicados</p>
+    </div>
+    <div id="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13851.420513449715!2d-76.39299415295184!3d-13.079801867761145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x910ff9481988ac57%3A0x8ddcc1eb64259b71!2sColegio%20%22Centro%20de%20Varones%22!5e0!3m2!1ses!2spe!4v1699709134096!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div id="ubicacion-texto">
+          <p>Centro De Varones Esta Ubicado en Jiron <br>
+          O Higgins, San Vicentre De Cañete</p>
+        </div>
+    </div>
+    <section class="chef contenedor">
+        <h2>Como Centro De Varones Nuestro Objetivo es : </h2>
+        <div class="contenido-chef">
+            <div class="texto-chef">
+                <h3>Formar Alumnos Excelentes <br>
+                Para Que Puedan Lograr sus Habilidades <br>
+            En El Ambito Que se iran a desarrollar</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus corporis dolores eveniet
+                    vitae,
+                    natus tempora recusandae hic laborum error ducimus repellat, laudantium temporibus tenetur totam
+                    sint
+                    consequuntur eligendi! Asperiores, ad.</p>
+                <a href="/biliografia.html" class="btn btn-verde">Leer Bíografia</a>
+            </div>
+            <div class="imagen-chef">
+                <img data-src="/assets/imagenes/bandacv.png" alt="fotografia del chef">
+            </div>
+        </div>
+    </section>
+    <div class="formulario-contacto contenedor"> <!--para q se centre es la otra subclase -->
+<!--deisi load es el data-src-->
+        <div class="informacion-contacto">
+            <h3>Contactanos</h3>
+            <p><i class="fas fa-map-marker-alt"></i>23. Roma Italia 75012</p>
+            <p><i class="fas fa-envelope"></i>omar.rivera@vallegrande.edu.pe</p>
+            <p><i class="fas fa-phone-alt"></i>+51930720474</p>
+            <div class="redes-sociales"> <!--los iconos de las redessociales: faceebook : twiter : instagram ig-->
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+        <main>
+            <form action="/validar" method="post" class="formulario" id="formulario"> <!--la clase para poder acceder con ella al css y el id para acceder al formulario con javascript-->
+                <!-- Grupo: Nombre -->
+                <div class="formulario__grupo" id="grupo__nombre">
+                    <label for="nombre" class="formulario__label">Nombre</label> <!--ctrl + d : seleccionar todas las palabras iguales-->
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Omar">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El Nombre tiene que ser Letras Mayusculas y Minusculas.</p>
+                </div>
+                <div class="formulario__grupo" id="grupo__apellido">
+                    <label for="apellido" class="formulario__label">Apellido</label> <!--ctrl + d : seleccionar todas las palabras iguales-->
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Rivera">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El Apellido tiene que tener letras Como En mayusculas o como Minusculas</p>
+                </div>
+                <!-- Grupo: Correo Electronico -->
+                <div class="formulario__grupo" id="grupo__correo">
+                    <label for="correo" class="formulario__label">Correo Electrónico</label>
+                    <div class="formulario__grupo-input">
+                        <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo. y siemre q sea correo si no no se enviara ejemplo omar.rivera@vallegrande.edu.pe</p>
+                </div>
+    
+                <!-- Grupo: Teléfono -->
+                <div class="formulario__grupo" id="grupo__telefono">
+                    <label for="telefono" class="formulario__label">Teléfono</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 9 dígitos.</p>
+                </div>
+                <div class="formulario__grupo" id="grupo__mensaje">
+                    <label for="mensaje" class="formulario__label">Mensaje</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="mensaje" id="mensaje" placeholder="escribe tu mensaje">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El Mensaje solo puedo contener ortografias validas</p>
+                </div>
+                <!-- Grupo: Terminos y Condiciones -->
+                <div class="formulario__grupo" id="grupo__terminos">
+                    <label class="formulario__label">
+                        <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                        Acepto los Terminos y Condiciones
+                    </label>
+                </div>
+    
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b>Por favor rellena el formulario.Correctamente</p>
+                </div>
+    
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <button type="submit" class="formulario__btn">Enviar</button>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente.</p>
+                </div>
+            </form>
+        </main>
+    </div>
+    <div class="pie-pagina ">
+        <div class="contenedor-piepagina contenedor">
+            <div class="info">
+                <h3>Dirección</h3>
+                <p>23.Roma Italia 75012</p>
+            </div>
+            <div class="info">
+                <h3>Días especiales</h3>
+                <p>Sabados y Jueves 7am - 11pm</p>
+                <p>+51930720474</p>
+            </div>
+            <div class="info">
+                <h3>Horarios</h3>
+                <p>Lunes - Domingo 7am - 11pm</p>
+                <div class="redes-sociales redes-pie"> <!--redes pie es otra subclase-->
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-twitter-square"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Todos los derechos reservados &copy; 2021 Risotrante Turilli, desarrollado por Omar Rivera</p> <!--&copy; entidad -->
+    </footer>
+    <script src="/js/app.js"></script>
+    <script src="/js/formulario.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <!-- <script src="/js/fechasCivicas.js"></script> -->
+    <script src="/datescivicas.js"></script>
+    <script src="/bot.js"></script>
+    <script src="/data.js"></script>
+</body>
+</html>

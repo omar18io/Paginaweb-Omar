@@ -1,0 +1,162 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #E5E5E5;
+}
+main {
+	max-width: 800px;
+	width: 90%;
+	margin: auto;
+	padding: 40px;
+}
+.formulario {
+	display: grid;
+	grid-template-columns: 1fr 1fr; /*para tener 2 columnas*/
+	gap: 20px; /*espaciado de cada elementyo de nuesttra grid*/
+}
+.formulario__label {
+	display: block; /*para que abarce el 100%*/
+	font-weight: 700; /*para que sea en guente negrita*/
+	padding: 10px; /*10 px a todos los lados*/
+	cursor: pointer; /*para que se ponga la manito a la hora de mover el raton el mous*/
+}
+.formulario__grupo-input {
+	position: relative; /*para que tenga un posicionamiento relativo de esta manera podremos posicionar el icono dentro del input*/
+}
+.formulario__input {
+	width: 100%; /*ancho del 100% para que tenga rtodo el espacio disponible*/
+	background: #fff; /*fondo de color blanco*/
+	border: 3px solid transparent; /*un borde de 3px un color solido y que sea transparente no queremos que se vea 
+	queremos quuwe se vea cuando tiene  su estado focus cuando le damo click */
+	border-radius: 3px;
+	height: 45px; /*altura*/
+	line-height: 45px; /*altura de linea al texto*/
+	padding: 0 40px 0 10px; /*0px arriba : 40px ala derecha : 0 pixeles abajo : 10px ala izquierda*/
+	transition: .3s ease all; /*transicion de .3segundos con una funcion de tiempo ease para todas las propiedades */
+}
+.formulario__input:focus { /*cuando le dan un click
+	hayga una transicion del borde y que cambie al 
+	color medio azulito y para que le quite un pequeño subrayado con outline:none;
+	y tambien una sombra : 3px 0px 30px de tamaño y un coor de rgba */
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+.formulario__input-error {
+	font-size: 12px; /*el tmño del texto*/
+	margin-bottom: 0; /*por defecto agarra un margena si q le especificamos que sea de 0 el margen */
+	display: none; /*para que desaparesca el texto esto se manejaran con js : parea que solo se muestre cuando el usuario
+	tenga agun error en el input*/
+}
+.formulario__input-error-activo { /*
+	cuando el error del input este activo un display de tipo block 
+	y es cuando se va a mostrar */
+	display: block;
+}
+.formulario__validacion-estado { /*
+	patra el icono*/
+	position: absolute; /*le estamos diciendo que queremos posicionarlo
+	de derecha a izquierda */
+	right: 10px; /*nods lo pone ala parte de arriba pero faltaria ajustar*/
+	bottom: 15px; /*y lo desplazamos hacia abajo 15px para su posicionamiento*/
+	z-index: 100;/*para que este arriba de otros elementos */
+	font-size: 16px; /*el tmño */
+	opacity: 0; /*para que no se muestre solo que se muestre cuando tengamos algun error*/
+}
+.formulario__checkbox { /*
+	para que tenga un margen a la derecha de 10px 
+	para tyener el espaciado */
+	margin-right: 10px;
+}
+.formulario__grupo-terminos, 
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+	/*de esta forma basicamente que el elemento de donde debia slir una advertencia que 
+	abarce 2 columnashacemos q ya se vea mejor*/
+	grid-column: span 2;
+}
+.formulario__mensaje {
+	height: 45px; /*altura de 45px*/
+	line-height: 45px; /*altura de la linea de 45px*/
+	background: #F66060; /*clor de fondo*/
+	padding: 0 15px; /*padding arriba y abjo de 0 y 15px a la derecha y izquierda*/
+	border-radius: 3px; /*un border radius de 3px*/
+	display: none; /*para que este oculta esto se hara con js
+	oara las vañidaciones y asi se pueda mostrar el mensaje si hay algun error */
+}
+.formulario__mensaje-activo {
+	display: block; /*para que se pueda mostrar el mensaje*/
+}
+.formulario__mensaje p {
+	margin: 0; /*para que se vea bien ya q el parrafo por defecto tiene un padding*/
+}
+.formulario__grupo-btn-enviar {
+	display: flex; /*el texto me lo pone ala derecha de lo que seria el boton de enviar */
+	flex-direction: column; /*para que qde debajo del boton*/
+	align-items: center; /*para que me centre los elementos*/
+}
+.formulario__btn {
+	height: 45px; /*altura*/
+	line-height: 45px; /*altura de linea*/
+	width: 30%; /*ancho del 30% del 	q pueda barcar*/
+	background: #cc1e1e;
+	color: #fff;
+	font-weight: bold; /*para las negritas*/
+	border: none; /*q nos quite el borde q tiene por defecto*/
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1s ease all; /**/
+}
+.formulario__btn:hover {
+	box-shadow: 3px 0px 30px rgb(175, 28, 28); /*cuando este hover q esta una sombra */
+}
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #1faa0c;
+	display: none; /*oculatrlo para que no se muestre*/
+}
+.formulario__mensaje-exito:hover {
+	box-shadow: 3px 0px 30px #0bce0b66;
+}
+.formulario__mensaje-exito-activo {
+	display: block; /*para que se muetre*/
+}
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+/* ----- -----  Mediaqueries ----- ----- */
+@media screen and (max-width: 800px) { /*
+	quiero acceder al media quiero que sea de pantalla y cuando tenga 
+	un max width un maximo de ancho de 800px lo que queremos hacver es acceder al formulario 
+	 al primer para desktop era de 2 columnas pero cuando sea a djispositivo movile sea 
+	 1 columnba*/
+	.formulario {
+		grid-template-columns: 1fr;
+	}
+
+	.formulario__grupo-terminos, 
+	.formulario__mensaje,
+	.formulario__grupo-btn-enviar {
+		grid-column: 1; /*tambien pinemos esa oarte ya que lo abiamos indicado anteriormenete en el codigo qye 
+		sea de dos columnas en este caso le espesificamos que sea 1 columna*/
+	}
+
+	.formulario__btn {
+		width: 100%; /*que abarce un ancho del 100%*/
+	}
+}
+

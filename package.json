@@ -1,0 +1,25 @@
+{
+  "name": "as231s2_t10",
+  "version": "1.0.0",
+  "description": "IEP CENTRO DE VARONES (Jesús RAYMONDI | Omar RIVERA)\r # S08\r <img src=\"/pruebas-img/img-responsi.png\" alt=\"responsi-pagina\">\r  Se logra Ver Como Nuestra Pagina web es totalmente responsi  <br>\r  Y Al Tu entrar Una de la funcionalidad seria que te pide tu nombre",
+  "main": "index.js",
+  "scripts": {
+    "start": "index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "local": "^0.3.3",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^3.0.2",
+    "passport": "^0.6.0",
+    "path": "^0.12.7",
+    "router": "^1.3.8"
+  }
+}
